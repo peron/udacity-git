@@ -2,7 +2,7 @@ FROM alpine:latest
 
 MAINTAINER peron <per.junel@gmail.com>
 
-RUN apk --no-cache add curl git nano tmux
+RUN apk --no-cache add curl git nano tmux less
 
 WORKDIR /root/version-control/reflections
 
