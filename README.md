@@ -38,7 +38,7 @@ To have the volume survive accidental removals of the container and image,
 or image updates, and give the container a friendlier name,
 use this little more verbose command
 ```
-docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --device /dev/snd --group-add audio -v udacity-git:/root/version-control --name udacity-git peron/udacity-git
+docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --device /dev/snd --group-add audio -v udacity-git:/home/developer --name udacity-git peron/udacity-git
 ```
 Unless you remove the volume with `docker volume rm udacity-git`, 
 your progress will survive removals of containers and images.
